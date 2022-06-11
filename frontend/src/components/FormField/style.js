@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const FormFieldWrapper = styled.div`
     position: relative;
-    margin-top: 2rem;
+    margin: 2rem;
 
     &:focus-within::after {
         content: '';
@@ -11,10 +11,10 @@ export const FormFieldWrapper = styled.div`
         bottom: 0;
         left: 0;
         right: 0;
-        width: 90%;
+        width: 100%;
         height: 0.3rem;
         margin: 0 auto;
-        background: var(--color-primary-light);
+        background: var(--color-secundary);
     }
 `;
 FormFieldWrapper.Label = styled.label`
@@ -24,7 +24,7 @@ FormFieldWrapper.Label = styled.label`
 FormFieldWrapper.Input = styled.input`
     width: 100%;
     height: 5.6rem;
-    border-radius: 0.6rem;
+    border-radius: 0.6rem 0.6rem 0 0;
     color: var(--color-text-complement);
     background: var(--color-input-background);
     border: 1px solid var(--color-line-in-white);
